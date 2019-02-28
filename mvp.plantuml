@@ -1,0 +1,7 @@
+@startuml
+
+[View] --> [Presenter]
+[Presenter] --> [Model]
+[Presenter] --> [View]
+
+@enduml
