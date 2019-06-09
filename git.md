@@ -35,15 +35,18 @@ git push --tags
 //revert uncommited staging files
 
 
+//rebase before merge your pull request https://github.com/edx/edx-platform/wiki/How-to-Rebase-a-Pull-Request
 //update master, it must be done before merge-base
 git checkout master
 git pull
 
 //find fork-point commit
+git checkout bug_fix_branch
 git merge-base bugfix_branch master
 
 //rebase
 git rebase -i commit_displayed_above master
+git 
 git push --force
 
 

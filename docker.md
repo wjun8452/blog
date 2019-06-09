@@ -68,4 +68,12 @@ android-ndk-r15c  androideabi-r15c-arm	androideabi-r15c-x86_64  svnkit-1.7.14
 
 root@12131edb4994:/git/navcore/buildtools/bin# ./tn integrate -t android-ndk-r15c
 Scanning... [-]
+
+
+
+
+BLSDK
+
+docker run -it -d --mount type=bind,source=/Users/junwang/git/blsdkwxfwh,target=/git/blsdkwxfwh --name wx -p 22022:22 ec2d-dockerregistry-01.mypna.com:8082/android-ndk-r15c
+12131edb4994352df465007354041a17239048390ec6a298ff3d5bba93fa0037
 ```
