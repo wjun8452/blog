@@ -1,4 +1,17 @@
 #How to process text data by using command line?
+* How to convert .xlsx to .csv?
+
+  ```
+  $ brew install gnumeric
+  
+  $ ssconvert Book1.xlsx newfile.csv
+  Using exporter Gnumeric_stf:stf_csv
+  
+  $ cat newfile.csv 
+  ```
+
+  
+
 * total lines
 
 ```

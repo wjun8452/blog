@@ -1,5 +1,5 @@
 iVolleyball
- 
+
 ##总体规划
 * 2018～2019， 微信小程序，吸引免费用户
  * v3 本地版，需求来自于排球爱好者。主打功能，全屏记分牌。设计原则是简单实用易操作。
@@ -27,18 +27,19 @@ iVolleyball
 * 用户反馈机制
 * 其他拾遗
  * 授权机制 
- 
+
 ##版本历史
 * v3.3 (2019/3/31) 大记分牌增加帮助页面。 (v4.0联网版本始终没有很好的设计，无法开发下去。决定基于v3.2上重新思考改进计划。）
 * v3.4 (2019/4) 转位和分数独立设计，以便快速调整场上位置和比分。从技术统计页面快速切换到记分牌页面，方便公布分数。记分牌页面的操作也会影响技术统计页面的转位。减分操作视为回退。
 * v3.5 (2019/5) 改进技术统计页面UI设计，弃用平铺式按钮，采用渐进引导式菜单。增加统计项目，完善统计报表页面。
 * v3.6 (2019/5) 可设置允许统计的项目，或者允许统计的队员。
-* v3.7 (2019/5) 云端存储，技术报告分享好友
+* v3.7, v3.7.1 (2019/5) 云端存储，技术报告分享好友
+* v3.7.2 增加邀请好友组队功能
 
 
 ##遇到的问题
  *  <template is="block" data="{{court_data.players, wxml报错。
- 
+
  > 改为 data="{{court_data}}"，在block模板里边提取court\_data.players。  
  *  小程序的model和各个page的data之间的关系，如何做到不冗余？
  >  整个应用只有一个数据data, data包括court核心数据和page显示数据， 都从storage读出来，供page使用，page退出时存入storage。领域模型court.js只提供操作数据的方法，不存储数据。
@@ -62,7 +63,7 @@ iVolleyball
  > 全局对象（var app = getApp();）
  > onfire.js， 本人觉得后三种本质都一样，不太好。
 * 下面的checkbox不是unchecked的，为啥？
- 
+
  ```
  <checkbox value="abc" checked="false"> abcdfd </checkbox>
 
@@ -116,11 +117,11 @@ iVolleyball
 拦网 B+ Block（拦）        
  B- Block Error（拦网失误） Touch Net（触网） Under Net（卧果） Over Net（过网击球） Illegal Block（非法拦网） Other（其他）   
  B0  有效拦网       
+
  
+
  
- 
- 
- 
+
  iOS版
 iOS开发资料
 swift语言：http://www.runoob.com/swift/swift-tutorial.html
